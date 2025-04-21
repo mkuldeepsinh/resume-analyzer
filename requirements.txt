@@ -46,7 +46,7 @@ Pillow
 plac
 plotly
 preshed
-protobuf
+protobuf==3.20.3
 pyarrow
 pycparser
 pycryptodome

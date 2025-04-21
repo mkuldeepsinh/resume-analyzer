@@ -152,20 +152,20 @@ def run():
     choice = st.sidebar.selectbox("Choose among the given options:", activities)
     link = '<b>Built with 🤍 by <a href="" style="text-decoration: none; color: #021659;">Kuldeep Vansh Harsh</a></b>' 
     st.sidebar.markdown(link, unsafe_allow_html=True)
-    st.sidebar.markdown('''
-        <!-- site visitors -->
+    # st.sidebar.markdown('''
+    #     <!-- site visitors -->
 
-        <div id="sfct2xghr8ak6lfqt3kgru233378jya38dy" hidden></div>
+    #     <div id="sfct2xghr8ak6lfqt3kgru233378jya38dy" hidden></div>
 
-        <noscript>
-            <a href="https://www.freecounterstat.com" title="hit counter">
-                <img src="https://counter9.stat.ovh/private/freecounterstat.php?c=t2xghr8ak6lfqt3kgru233378jya38dy" border="0" title="hit counter" alt="hit counter"> -->
-            </a>
-        </noscript>
+    #     <noscript>
+    #         <a href="https://www.freecounterstat.com" title="hit counter">
+    #             <img src="https://counter9.stat.ovh/private/freecounterstat.php?c=t2xghr8ak6lfqt3kgru233378jya38dy" border="0" title="hit counter" alt="hit counter"> -->
+    #         </a>
+    #     </noscript>
     
-        <p>Visitors <img src="https://counter9.stat.ovh/private/freecounterstat.php?c=t2xghr8ak6lfqt3kgru233378jya38dy" title="Free Counter" Alt="web counter" width="60px"  border="0" /></p>
+    #     <p>Visitors <img src="https://counter9.stat.ovh/private/freecounterstat.php?c=t2xghr8ak6lfqt3kgru233378jya38dy" title="Free Counter" Alt="web counter" width="60px"  border="0" /></p>
     
-    ''', unsafe_allow_html=True)
+    # ''', unsafe_allow_html=True)
 
     ###### CODE FOR CLIENT SIDE (USER) ######
 
