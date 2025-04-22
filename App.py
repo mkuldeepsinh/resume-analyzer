@@ -30,6 +30,8 @@ from Courses import ds_course, web_course, android_course, ios_course, uiux_cour
 
 # MongoDB Connection Setup
 from pymongo import MongoClient
+from geopy.exc import GeocoderUnavailable
+
 
 # Replace with your MongoDB connection string
 MONGO_URI = "mongodb://localhost:27017/"
@@ -183,7 +185,10 @@ def run():
         g = geocoder.ip('me')
         latlong = g.latlng
         geolocator = Nominatim(user_agent="http")
-        location = geolocator.reverse(latlong, language='en')
+        try:
+            location = geolocator.reverse(latlong, language='en', timeout=10)
+        except GeocoderUnavailable:
+            location = "Unavailable"
         address = location.raw['address']
         cityy = address.get('city', '')
         statee = address.get('state', '')
